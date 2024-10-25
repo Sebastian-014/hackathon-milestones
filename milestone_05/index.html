@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Shareable Resume Builder</h1>
+
+    <form id="resume-form">
+
+        <fieldset>
+
+            <!--Personal-information-Section-->
+
+            <legend>PERSONAL INFORMATION</legend>
+
+            <label for="username">Username :</label>
+            <input type="username" id="username" placeholder="Enter your username" required>
+
+            <br>
+
+            <label for="name">Name :</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+
+            <br>
+
+            <label for="fathername">Father's name :</label>
+            <input type="text" id="fathername" placeholder="Enter your father's name" required>
+
+            <br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+
+            <br />
+
+            <label for="phone">Phone :</label>
+            <input type="tel" id="phone" placeholder="Enter your Phone number" required>
+
+            <br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <!--Education-Section-->
+
+
+            <legend>EDUCATION</legend>
+            <label for="education"><b>Education :</b></label>
+            <textarea placeholder="Enter your education" id="education" rows="5" required></textarea>
+
+        </fieldset>
+
+        <fieldset>
+
+            <!--Experience-Section-->
+
+            <legend>WORK EXPERIENCE</legend>
+            <label for="Experience"><b> Experience :</b></label>
+            <textarea placeholder="Enter your experience" id="experience" rows="6" required></textarea>
+
+
+        </fieldset>
+
+        <fieldset>
+
+            <!--Certification-Section-->
+
+            <legend>CERTIFICATIONS</legend>
+            <label for="certifications"><b> Certifications :</b></label>
+            <textarea placeholder="Enter your certifications" id="certifications" rows="5"></textarea>
+
+
+        </fieldset>
+
+        <fieldset>
+
+            <!--Skills-Section-->
+
+            <legend>SKILLS</legend>
+            <label for="skills"><b>Skills :</b></label>
+            <textarea placeholder="Enter your skills" id="skills" rows="6" required></textarea>
+
+        </fieldset>
+
+        <!--Button-->
+        <div class="button">
+            <button type="submit"><b>Generate</b></button>
+        </div>
+
+    </form>
+    <br>
+
+    <!--Dynamic & Editable Resume-->
+    <div id="resume-display" contenteditable="true">
+
+    </div>
+
+    <!--Section for shareable link & Download option-->
+
+    <div id="shareable-link-container" style="display: none;">
+        <h2>Link here :</h2>
+        <a herf="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf">Download as Pdf</button>
+
+        <br>
+
+    </div>
+
+    <!--Resume-generated-here-->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
