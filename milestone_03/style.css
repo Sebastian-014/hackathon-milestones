@@ -9,7 +9,7 @@ body {
 
 form {
     margin: auto;
-    background-color: #e2e8f0;
+    background-color: #e9d5ff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -27,7 +27,7 @@ fieldset {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #f1f5f9;
+    background-color:#f3e8ff;
 }
 
 legend {
@@ -59,7 +59,7 @@ textarea {
 button {
     display: block;
     width: 80%;
-    background-color: #d97706;
+    background-color: #3f3f46;
     color: white;
     border: none;
     border-radius: 9999px;
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #eab308;
+    background-color: #27272a;
 }
 
 #resume-display {
